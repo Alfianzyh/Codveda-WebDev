@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>YX.Gallery</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YX.Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <body>
-        <header>
-            <div class="logo">
-                <img src="logo.png" alt="YX.Gallery Logo" />
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="hamburgerMenu" id="hamburgerMenu">
-                    <span>Home</span>
-                    <span>Gallery</span>
-                    <span>About</span>
-                    <span>Contact</span>
-                </div>
-        </header>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="YX.Gallery Logo">
+    </div>
 
-        <section class="hero">
-            <h1>Welcome to YX.Gallery</h1>
-            <p>Your one-stop destination for stunning photography.</p>
-        </section>
+    <nav id="nav-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-        <section class="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <img src="image1.jpg" alt="Image 1" />
-                <img src="image2.jpg" alt="Image 2" />
-                <img src="image3.jpg" alt="Image 3" />
-                <img src="image4.jpg" alt="Image 4" />
-            </div>
-        </section>
-    </body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
 
-    <footer>
-        <p>&copy; 2023 YX.Gallery. All rights reserved.</p>
-        <p>Follow us on:
-            <a href="https://facebook.com">Facebook</a>,
-            <a href="https://twitter.com">Twitter</a>,
-            <a href="https://instagram.com">Instagram</a>
-        </p>
-    </footer>
+  <section class="hero" id="home">
+    <h1>Welcome to YX.Gallery</h1>
+    <p>Your one-stop destination for stunning photography.</p>
+  </section>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="image1.jpg" alt="Image 1" />
+      <img src="image2.jpg" alt="Image 2" />
+      <img src="image3.jpg" alt="Image 3" />
+      <img src="image4.jpg" alt="Image 4" />
+    </div>
+  </section>
 
-        hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-        });
-    </script>
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p>YX.Gallery showcases a curated collection of breathtaking visuals from around the world.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>For collaborations or inquiries, reach out to us via social media.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 YX.Gallery. All rights reserved.</p>
+    <p>Follow us on:
+      <a href="https://facebook.com">Facebook</a>,
+      <a href="https://twitter.com">Twitter</a>,
+      <a href="https://instagram.com">Instagram</a>
+    </p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
 </html>
